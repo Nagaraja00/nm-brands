@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NM Brands - Fashion Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                NM <span>BRANDS</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#clothing">Clothing</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="cart">
+                🛒 Cart <span id="cart-count">0</span>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO NM BRANDS</p>
+
+            <h1>
+                STYLE THAT<br>
+                <span>DEFINES YOU</span>
+            </h1>
+
+            <p>
+                Discover premium clothing and accessories
+                designed for your everyday style.
+            </p>
+
+            <a href="#clothing" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <div class="category-image clothing-bg">
+                    👕
+                </div>
+                <h3>Clothing</h3>
+                <a href="#clothing">Explore</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image accessories-bg">
+                    👜
+                </div>
+                <h3>Accessories</h3>
+                <a href="#accessories">Explore</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image shoes-bg">
+                    👟
+                </div>
+                <h3>Footwear</h3>
+                <a href="#clothing">Explore</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Clothing -->
+    <section class="products" id="clothing">
+
+        <h2>Trending Clothing</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    👕
+                </div>
+
+                <div class="product-info">
+                    <h3>Premium T-Shirt</h3>
+                    <p>Classic Cotton T-Shirt</p>
+
+                    <div class="product-bottom">
+                        <strong>₹799</strong>
+
+                        <button onclick="addToCart('Premium T-Shirt')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    👔
+                </div>
+
+                <div class="product-info">
+                    <h3>Casual Shirt</h3>
+                    <p>Premium Casual Shirt</p>
+
+                    <div class="product-bottom">
+                        <strong>₹1,299</strong>
+
+                        <button onclick="addToCart('Casual Shirt')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    🧥
+                </div>
+
+                <div class="product-info">
+                    <h3>Denim Jacket</h3>
+                    <p>Classic Denim Jacket</p>
+
+                    <div class="product-bottom">
+                        <strong>₹1,999</strong>
+
+                        <button onclick="addToCart('Denim Jacket')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    👖
+                </div>
+
+                <div class="product-info">
+                    <h3>Regular Jeans</h3>
+                    <p>Comfort Fit Jeans</p>
+
+                    <div class="product-bottom">
+                        <strong>₹1,499</strong>
+
+                        <button onclick="addToCart('Regular Jeans')">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Accessories -->
+    <section class="products accessories-section" id="accessories">
+
+        <h2>Accessories</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    🕶️
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Classic Sunglasses</h3>
+
+                    <p>Premium UV Protection</p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹699</strong>
+
+                        <button onclick="addToCart('Classic Sunglasses')">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    ⌚
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Classic Watch</h3>
+
+                    <p>Elegant Fashion Watch</p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹1,499</strong>
+
+                        <button onclick="addToCart('Classic Watch')">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    🎒
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Urban Backpack</h3>
+
+                    <p>Stylish Everyday Backpack</p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹999</strong>
+
+                        <button onclick="addToCart('Urban Backpack')">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    🧢
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Street Cap</h3>
+
+                    <p>Trendy Cotton Cap</p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹499</strong>
+
+                        <button onclick="addToCart('Street Cap')">
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <h2>Join NM Brands</h2>
+
+        <p>
+            Get updates about new collections and special offers.
+        </p>
+
+        <div class="subscribe">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                id="email"
+            >
+
+            <button onclick="subscribe()">
+                Subscribe
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>NM BRANDS</h2>
+                <p>
+                    Fashion that defines your style.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p>Home</p>
+                <p>Clothing</p>
+                <p>Accessories</p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Email: nmbrands@example.com</p>
+                <p>India</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 NM Brands. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
